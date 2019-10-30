@@ -1,0 +1,20 @@
+.lightFont{
+    font-size: 2em;
+    font-display: times;
+    color: darkgrey;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+.img-spacing{
+    margin: 10px 100px;
+}
+
+.content-center{
+    margin: 10px 300px;
+}
+
+.a{
+    text-decoration: none;
+}
