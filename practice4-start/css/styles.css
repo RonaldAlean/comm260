@@ -1,0 +1,38 @@
+h1 {
+	font-size: 48px;	
+}
+.post-heading {
+	color: #006633;
+	font-size: 1.8em;	
+}
+#main-nav	{
+	font-size: 1.3em;	
+}
+blockquote	{
+	color: #33ccff;
+	font-size: 1.3em;
+}
+img{
+	width:500px;
+	height:500px;
+	border: 0px;
+}
+
+section{
+	margin: 10px 300px;
+}
+
+footer{
+	widows: 500px;
+	height: 5000px;
+}
+#generalFont {
+	font-family: 'Times New Roman', Times, serif;
+}
+.smallFont{
+	font-family: 'Times New Roman', Times;
+	font-size: 2em;
+}
+nav a{
+	margin: 10px, 10px;
+}
