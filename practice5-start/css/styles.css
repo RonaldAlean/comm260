@@ -1,84 +1,82 @@
+header {
+  padding: 20px 0px 10px;
+  background: #ffcc00;
+  margin: 0px auto;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+header h1 {
+  margin-bottom: 0px;
+  padding-left: 25px;
+}
+#content-left {
+  padding: 0px 25px;
+  width: 60%;
+  float: left;
+  margin-bottom: 30px;
+}
 h1 {
-	font-size: 48px;	
+  font-size: 48px;
 }
-
-.post{
-	border-right: 5px solid #006633;
-}
-
-blockquote{
-	color: #222;
-	margin-top: 0px;
-	margin-left: 200px;
-}
-.post-heading{
-	color: yellow;
+.post {
+  border-right: 5px solid #006633;
 }
 .post-heading {
-	color: #006633;
-	font-size: 1.8em;	
-	text-align: center;
-	margin-bottom: 0px;
+  color: #006633;
+  font-size: 1.8em;
+  margin-bottom: 0px;
 }
-#main-nav	{
-	font-size: 1.3em;	
-	line-height: 1.4em;
+#main-nav {
+  font-size: 1.3em;
+  line-height: 1.4em;
 }
-blockquote	{
-	color: #222;
-	font-size: 1.3em;
-	font-style: italic;
-	margin-top:0px;
-	margin-left: 200px;
+blockquote {
+  color: #222;
+  margin-top: 0px;
+  margin-left: 200px;
+  font-size: 1.3em;
+  font-style: italic;
 }
-#main-nav a, #main-nav a:visited {
-	text-decoration: none;
+
+#main-nav a,
+#main-nav a:visited {
+  text-decoration: none;
 }
-#main-nav a:hover, #main-nav a:focus, #main-nav a:active {
-	text-decoration: underline;
+#main-nav a:hover,
+#main-nav a:focus,
+#main-nav a:active {
+  text-decoration: underline;
 }
-.hero-image	{
-float:left;
+.hero-image {
+  float: left;
 }
 article p {
-	text-align: justify;
-	text-indent: 25px;
+  text-align: justify;
+  text-indent: 25px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.article-thumbs	{
-		text-align: center;
-		clear:both;
+.article-thumbs {
+  text-align: center;
+  clear: both;
 }
-
-header {
-	padding:20px 0px 10px;
-	background-color: #ffcc00;
+#sidebar {
+  width: 32%;
+  float: left;
+  background: #3cf;
+  color: #333;
+  padding: 15px;
+  margin-top: 75px;
+  min-height: 300px;
 }
-
-#sidebar{
-	width: 32%;
-	float: left;
-	background-color: #3cf;
-	color: #333;
-	padding: 15px 75px
+footer {
+  clear: both;
+  padding: 20px 0px;
+  border-top: 5px groove #ffcc00;
 }
-
-.container{
-	width: 1180px;
-	margin: 0px auto;
+.article-thumbs img {
+  border-radius: 50%;
 }
-
-header h1 {
-	margin-bottom:0px;
-	padding-left: 25px;
-	color: yellow;
-}
-
-#container-left{
-	padding:0px 25px;
-	padding: 0px 25px 0px 25px;
-	width: 60%;
-	float: left;
-	margin-bottom: 30px;
-}
-
