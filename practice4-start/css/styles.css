@@ -1,40 +1,38 @@
 h1 {
-  font-size: 48px;
+	font-size: 48px;	
 }
 .post-heading {
-  color: #006633;
-  font-size: 1.8em;
-  text-align: center;
+	color: #006633;
+	font-size: 1.8em;	
 }
-#main-nav {
-  font-size: 1.3em;
+#main-nav	{
+	font-size: 1.3em;	
 }
-blockquote {
-  color: #33ccff;
-  font-size: 1.3em;
-  font-style: italic;
+blockquote	{
+	color: #33ccff;
+	font-size: 1.3em;
 }
-#main-nav a,
-#main-nav a:visited {
-  text-decoration: none;
+img{
+	width:500px;
+	height:500px;
+	border: 0px;
 }
-#main-nav a:hover,
-#main-nav a:focus,
-#main-nav a:active {
-  text-decoration: underline;
+
+section{
+	margin: 10px 300px;
 }
-article p {
-  text-align: justify;
-  text-indent: 25px;
+
+footer{
+	widows: 500px;
+	height: 5000px;
 }
-.article-thumbs {
-  text-align: center;
-  clear: both;
+#generalFont {
+	font-family: 'Times New Roman', Times, serif;
 }
-.article-thumbs img {
-  width: 200px;
+.smallFont{
+	font-family: 'Times New Roman', Times;
+	font-size: 2em;
 }
-.hero-image {
-  float: left;
-  width: 640px;
+nav a{
+	margin: 10px, 10px;
 }
