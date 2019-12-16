@@ -1,0 +1,11 @@
+h2{
+    color:lightgreen;
+}
+.center{
+    text-align: center;
+    border: 3px solid gray;
+}
+
+.black-bg{
+    background: black;
+}
