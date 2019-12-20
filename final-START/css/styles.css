@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; 
+    line-height: 1.4rem;
+}
+
+img {
+	width: 50%;
+    max-width: 50%;
+}
+
+nav {
+    display: inline;
+}
+
+footer {
+    margin: 4rem 0rem;
+    padding: 2rem 0rem;
+    border-top: 1px solid #ccc;
+    font-size: .8rem;
+}
+
+h1{
+    font-family: 'Slabo27px';
+    color: gray;
+    line-height: 1em;
+    margin: 5% 10%;
+}
+h2{
+    font-family: 'Slabo27px';
+    border-bottom: 1px solid red;
+    margin: 0px 6%;
+    margin-top: 20px;
+    text-align: center;
+}
+body{
+    font-family: 'Roboto';
+}
+
+div{
+    float: right;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+}
+.column2{
+    width: 40%;
+    float: left;
+    padding: 30px;
+}
+
+.mystuff{
+    width: 80%
+}
+
+.foooter{
+    margin: 5% 3%;
+    float: left;
+}
+nav ul div a{
+    font-family: 'Slabo27px';
+    color: gray;
+    margin: 10px;
+    text-decoration: none;
+    padding-bottom: 10% red;
+}
+div{
+    padding: 20% red;
+}
