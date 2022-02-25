@@ -72,7 +72,7 @@ header h4{
 	font-size: 3em;
 }
 #main-nav	{
-	font-size: 1.3em;	
+	font-size: 1.3em;
 }
 a:hover {
 	color:white;
@@ -85,10 +85,20 @@ blockquote	{
 	display:block;
 	font-family:sans-serif;
 
-	color: #33ccff;
-	font-size: 1.3em;
-	margin: 50px 10px;
+	color: gray;
+	font-size: 1em;
+	margin: 15px 100px;
+	font-family: cursive;
 }
+
+/*About the mod*/
+/*a tame version of aloe vera.*/
+
+footer h3{
+	text-align: center;
+	margin: 0px, 0px;
+}
+
 img{
 	width:500px;
 	height:500px;

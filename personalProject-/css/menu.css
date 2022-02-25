@@ -1,34 +1,52 @@
-div.scrollmenu {
+div.linehuvmenu {
     background-color: #333;
+    /*active member of society*/
     overflow: auto;
+    /*i'm staring*/
+    float:none;
+    overflow: hidden;
     white-space: nowrap;
+    width:100%;
+    position: relative;
+    display: flex;
   }
-  
-  div.scrollmenu a {
+
+  html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+  }
+
+  div.linehuvmenu a {
     display: inline-block;
+    flex-direction:column;
     color: white;
     text-align: center;
     padding: 14px;
     text-decoration: none;
   }
-  
+
   /*When Hover*/
-  div.scrollmenu a:hover {
+  div.linehuvmenu a:hover {
     background-color: rgb(119, 119, 119);
   }
 
   /*selected link*/
   /*When link is selected*/
-  div.scrollmenu a:active {
+  div.linehuvmenu a:active {
     background-color: orange;
   }
 
   /*ONce link is visited*/
-  div.scrollmenu a:visited {
+  div.linehuvmenu a:visited {
     color: white;
   }
 
   /*Selects any <input when focused*/
-  div.scrollmenu a:focus {
+  div.linehuvmenu a:focus {
     color: Green;
   }
