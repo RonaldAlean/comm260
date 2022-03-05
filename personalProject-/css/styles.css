@@ -81,7 +81,7 @@ a {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-decoration: none;
 }
-blockquote	{
+/*.blockquote	{
 	display:block;
 	font-family:sans-serif;
 
@@ -90,14 +90,27 @@ blockquote	{
 	margin: 15px 100px;
 	font-family: cursive;
 }
+MATTO*/
+/*Wo dont have the first potential at first.*/
 
-/*About the mod*/
-/*a tame version of aloe vera.*/
+.entire{
+	width: 70%;
+}
 
 footer h3{
 	text-align: center;
 	margin: 0px, 0px;
 }
+
+blockquote {
+	font-weight: bold;
+	font-size: large;
+	font-size: 40px;
+	vertical-align: bottom;
+}
+
+/*I'm still just collecting data.*/
+/*I bought your history.*/
 
 img{
 	width:500px;
