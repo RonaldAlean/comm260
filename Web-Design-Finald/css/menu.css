@@ -1,0 +1,46 @@
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    float:none;
+    overflow: hidden;
+    white-space: nowrap;
+    width:100%;
+    position: relative;
+    display: flex;
+  }
+
+  body {
+    min-height: 100%;
+    margin: 0;
+  }
+
+  div.scrollmenu a {
+    display: inline-block;
+    flex-direction:column;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  /*When Hover*/
+  div.scrollmenu a:hover {
+    background-color: rgb(119, 119, 119);
+  }
+
+  /*selected link*/
+  /*When link is selected*/
+  div.scrollmenu a:active {
+    background-color: orange;
+  }
+
+  /*ONce link is visited*/
+  div.scrollmenu a:visited {
+    color: white;
+  }
+
+  /*Selects any <input when focused*/
+  div.scrollmenu a:focus {
+    color: Green;
+  }

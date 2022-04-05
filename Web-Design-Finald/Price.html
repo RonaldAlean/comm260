@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charser="UTF-8">
+    <title>How to create a Simple Dropdown meanu suing html css</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <lu>
+            <li>Home</li>
+            <li>about</li>
+            <li>Services</li>
+            <ul>
+                <li>Marketing</li>
+                <li>Design</li>
+                <ul>
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>Interior</li>
+                </ul>
+                <li>Branding</li>
+            </ul>
+            <li>Hello!</li>
+            <li>Contact</li>
+        </lu>
+    </div>
+
+<br>
+<dialog id="confirmation-dialog">
+    <h1>Do you want to delete everything?</h1>
+    <p>You will lose all your data.</p>
+    <button id="cancel-delete">Cancel</button>
+    <button id="confirm-delete">Delete!</button>
+    <h1>hello</h1>
+</dialog>
+
+<button id="delete">Delete everything</button>
+<p id="result"></p>
+<script>
+let dialog = document.getElementById("confirmation-dialog");
+let result = document.getElementById("result");
+
+// Show the dialog when clicking "Delete everything"
+document.getElementById("delete").addEventListener("click", function() {
+    dialog.showModal();
+});
+
+document.getElementById("cancel-delete").addEventListener("click", function() {
+    dialog.close();
+    result.textContent = "Canceled!";
+});
+document.getElementById("confirm-delete").addEventListener("click", function() {
+    dialog.close();
+    result.textContent = "Deleted!";
+});
+</script>
+
+<h1>Like a leave button.</h1>
+
+</body>
+
+</html>
