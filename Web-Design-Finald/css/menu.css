@@ -4,7 +4,7 @@ div.scrollmenu {
     float:none;
     overflow: hidden;
     white-space: nowrap;
-    width:100%;
+    width: 100%;
     position: relative;
     display: flex;
   }
@@ -20,6 +20,7 @@ div.scrollmenu {
     color: white;
     text-align: center;
     padding: 14px;
+    font-size: 15px;
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
   }
