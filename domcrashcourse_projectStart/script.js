@@ -2,7 +2,6 @@ var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
 
-
 //form submit event
 form.addEventListener('submit', addItem);
 // Delete event
@@ -15,7 +14,7 @@ function addItem(e){
     e.preventDefault();
 
 //get input value
-var newItem = document.getElementById('item');
+var newItem = document.getElementById('item').value;
 
 var li = document.createElement('li');
 
@@ -29,42 +28,47 @@ var deleteBtn = document.createElement('button');
 
 // Add classes to del button
 deleteBtn.className = 'btn btn-danger btn-sm float-right delete';
-// Append text node
 
+// Append text node
 deleteBtn.appendChild(dcument.createTextNode('x'));
 
 // Append button to li
 li.appendChild(deleteBtn);
 
+// Append lit to list
 itemList.appendChild(li);
 
 }
 
+// Remove item
 function removeItem(e){
     if(e.target.classList.contains('delete')){
         if(confirm('Are You Sure?')){
             var li = e.target.parentElement;
             itemList.removeChild(li);
-            //console.log(1);
         }
     }
 }
 
-function filterItems(e){
+/*
+// Remove item
+function removeItems(e){
     if(e.target.classList.contains('delete')){
       if(confirm('Are You Sure?')){
         var li = e.target.parentElement;
         itemList.removeChild(li);
       }
     }
-}
+} */
 
-function filterItems(e){
+
+/*
+function filterItems(){
     //convert text to lowercase
     var text = e.target.value.toLowerCase();
     // Get lis
     var items = itemList.getElementsByTagName('li');
-    console.log(items);
+    console.log(itmesName);
     // Convert to an array
 
     Array.from(items).forEach(function(item){
@@ -77,7 +81,6 @@ function filterItems(e){
             } else{
                 item.style.display = 'none';
             }
-        }
     });
 
-}
+    }*/
