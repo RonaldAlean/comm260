@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2: Exercise 3</title>
+    <meta name="read-only" content="true">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta name="author" content="none">
+    <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <link rel="stylesheet" href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.min.css" />
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <style>
+
+      #name_input {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+
+      #date_input {
+        float: left;
+        margin-bottom: 20px;
+      }
+
+      #year_input {
+        clear:both;
+      }
+
+      .rank_color {
+        width: 20px;
+        margin-top: 2px;
+      }
+
+      /* Step 2: Your CSS code goes here */
+      #feedback { font-size: 1.4em; }
+      #selectable .ui-selecting { background: #FECA40; }
+      #selectable .ui-selected { background: #F39814; color: white; }
+      #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+      #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+
+      /* Step 3: Your CSS code goes here */
+      #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+      #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+      #sortable li span { position: absolute; margin-left: -1.3em; }
+
+      /* Step 4: Your CSS code goes here */
+      label {
+         display: inline-block;
+         width: 5em;
+      }
+
+    </style>
+
+    <script>
+    $(document).ready(function() {
+
+      /* Step 1: Your js code goes here */
+      $( function() {
+         $( "#datepicker" ).datepicker();
+      } );
+
+      /* Step 2: Your js code goes here */
+      $( function() {
+          $( "#selectable" ).selectable();
+      } );
+
+      /* Step 3: Your js code goes here */
+      $( function() {
+          $( "#sortable" ).sortable();
+          /*
+            $("#sortable").disableSelection();
+          */
+      } );
+
+      /* Step 4: Your js code goes here */
+      $( function() {
+        $( document ).tooltip();
+      } );
+
+    });
+    </script>
+  </head>
+  <body>
+    <h2>jQuery UI-Survey</h2>
+    <h3>General Information</h3>
+    <div id="name_input">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+    </div>
+    <div id="date_input">
+      <label for="date">Date:</label>
+      <input type="text" id="date" />
+    </div>
+    <div id="year_input">
+	<h3>Are you enrolled as an undergraduate or a graduate?</h3>
+      <input type="radio" name="enroll_year" id="ugrad" value="ugrad"> 
+      <label for="ugrad">Undergraduate (taking 6.813, doesn't have to do RS assignments)</label>
+      <input type="radio" name="enroll_year" id="grad" value="grad">
+      <label for="grad">Graduate (taking 6.831, required to do RS assignments)</label>
+
+      <!-- Step 2: Your HTML here -->
+      <p>Date: <input type="text" id="datepicker"></p>
+
+    </div>
+
+    <div id="color_input">
+      <!-- Comment out instruction when you finish step 3 -->
+      <h3>Rank the colors listed from your most favorite (1) to your least favorite (5). Be sure to only use each ranking once.</h3>
+      
+      <input type="text" class="rank_color" id="red" />
+      <label for="red">#ff0000</label><br/>
+      <input type="text" class="rank_color" id="blue" />
+      <label for="blue">#0000ff</label><br/>
+      <input type="text" class="rank_color" id="hot_pink" />
+      <label for="hot_pink">#ff00b3</label><br/>
+      <input type="text" class="rank_color" id="mustard" />
+      <label for="mustard">#ded447</label><br/>
+      <input type="text" class="rank_color" id="dark_green" />
+      <label for="dark_green">#125e18</label><br/>
+
+      <!-- Step 3: Your HTML here -->
+      <ol id="selectable">
+        <li class="ui-widget-content">Item 1</li>
+        <li class="ui-widget-content">Item 2</li>
+        <li class="ui-widget-content">Item 3</li>
+        <li class="ui-widget-content">Item 4</li>
+        <li class="ui-widget-content">Item 5</li>
+        <li class="ui-widget-content">Item 6</li>
+        <li class="ui-widget-content">Item 7</li>
+      </ol>
+
+      <div><h1>This is also selectable.</h1></div>
+      <ol id="selectable">
+        <li class="ui-widget-content">Undergraduate (taking 6.813, doesn't have to do RS assignments)</li>
+        <li class="ui-widget-content">Graduate (taking 6.831, required to do RS assignments)</li>
+      </ol>
+
+      <ol id="selectable">
+        <li class="ui-widget-content" title="taking 6.813, doesn't have to do RS assignments">Undergraduate</li>
+        <li class="ui-widget-content" title="taking 6.831, required to do RS assignments">Graduate</li>
+      </ol>      
+
+      <div>
+      <h1>Hello welcome to this separator. :)</h1>
+      </div>
+
+      <ul id="sortable">
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#ff0000</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#0000ff</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#ff00b3</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#ded447</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>#125e18</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+      </ul>
+
+      <div>
+        <h1>Hello welcome to the secont separator. :)</h1>
+      </div>
+
+      <p><a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
+        the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
+        <p>But as it&apos;s not a native tooltip, it can be styled. Any themes built with
+        <a href="http://jqueryui.com/themeroller/" title="ThemeRoller: jQuery UI&apos;s theme builder application">ThemeRoller</a>
+        will also style tooltips accordingly.</p>
+        <p>Tooltips are also useful for form elements, to show some additional information in the context of each field.</p>
+        <p><label for="age">Your age:</label><input id="age" title="We ask for your age only for statistical purposes."></p>
+        <p>Hover the field to see the tooltip.</p>
+      
+      <!-- Uncomment instruction when you finish step 3 -->
+      <!--<h3>Rank the colors listed from your most favorite to your least favorite:</h3>-->
+
+    </div>
+
+  </body>
+</html>
