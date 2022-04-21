@@ -4,7 +4,7 @@ div.scrollmenu {
     float:none;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
+    width: 102%;
     position: relative;
     display: flex;
   }
@@ -36,7 +36,7 @@ div.scrollmenu {
     background-color: orange;
   }
 
-  /*ONce link is visited*/
+  /*Once link is visited*/
   div.scrollmenu a:visited {
     color: white;
   }

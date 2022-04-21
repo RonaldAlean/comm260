@@ -20,63 +20,81 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
-
     <style>
-        body{
-             font-family: 'Tangerine', serif;
-             font-size: 50px;
-            }
+        body {
+            font-family: 'Tangerine', serif;
+            font-size: 50px;
+        }
+
+        /* Bottom right text */
+        .text-block {
+            position: absolute;
+            bottom: 80%;
+            right: 0px;
+            background-color: rgb(0, 119, 255);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     </style>
 
-    <div class="container-ms-12">
-        <div class="row p-4 bg-primary text-white">
+    <div class="row" style="position: relative;">
+        <div class="text-block">
+            <h1 style="float:inline-start; text-align: center;">Welcome to spicy-pie Burgers</h1>
+        </div>
+        <video autoplay style="margin: 0 0; border: 0 0;
+            padding: 0 0;">
+            <source src="img/Cover_Video_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-            <h1>Welcome to Spicy-Pie Burgers</h1>
+    <div class="container-ms-12">
+        <div class="row p-4 bg-primary text-white" style="margin-top: 0px;">
+
             <div class="col">
 
+            </div>
+
+            <div class="col">
+                <!--
                 <img class="float" src="img/spicy-pie-pizza.png" style="
              width: 200px;
              height: 200px;
              margin: 0px 0px 15px 10px;">
             </div>
-            <div class="col">
-                <center>
-                    <video width="320" height="240" autoplay style="float:right; margin: 0;
-                        width:90%; align-items: baseline; display:block; margin-left: auto; margin-right: auto;
-                    ">
-                        <source src="img/pizza-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </center>
+        -->
+
+                <p>This is one of the classiest ways to eat around the area. Come and shop! :)</p>
             </div>
+            <div class="row">
 
-            <p>This is one of the classiest ways to eat around the area. Come and shop! :)</p>
-        </div>
-        <div class="row">
-
-            <div class="col-lg-12">
-                <div class="scrollmenu">
-                    <a href="index.html">Burgers adress and location</a>
-                    <a href="Prices.html">Prices and menu</a>
-                    <a href="History.html">History</a>
-                    <a href="Work.html">Work</a>
+                <div class="col-lg-12">
+                    <div class="scrollmenu">
+                        <a href="index.html">Burgers adress and location</a>
+                        <a href="Prices_1.html">Prices and menu</a>
+                        <a href="History.html">History</a>
+                        <a href="Work.html">Work</a>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
+            <h1>Add some sort of Visual header.</h1>
+            <p>Here is the link. <a>www.spicypie.com</a></p>
+            <P><a href="https://pizzagrindersbeer.com/menu/">https://pizzagrindersbeer.com/menu/</a></P>
+            <!-- Button could be menu PDF. -->
 
-        <article class="bg-warning">
-            <p class=" row bg-warning"></p>
-            <p style="text-align: center; margin: 0;">Here is the special</p>
-            <p></p>
-            <img src="img/Menu_1_Pizza_Pie.png" style="margin-left: auto; margin-right: auto; display: block;"
-              width="500px" height="600px" alt="Phot_Should_Show_up">
-        </article>
-        <div class="row bg-warning" style="color:warning">
-            l
+            <article class="bg-primary">
+                <p class=" row bg-warning"></p>
+                <p style="text-align: center; margin: 0;">Here is the special</p>
+                <p></p>
+                <img src="img/Menu_1_Pizza_Pie.png" style="margin-left: auto; margin-right: auto; display: block;"
+                    width="500px" height="600px" alt="Phot_Should_Show_up">
+            </article>
+            <div class="row bg-warning" style="color:warning">
+                l
+            </div>
         </div>
-
-</body>
 
 </html>

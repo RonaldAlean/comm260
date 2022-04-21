@@ -30,7 +30,7 @@
     margin: 0 0 0px 0;
   }
 
-  /*rorm-row*/
+  /*form-row*/
   .form-row{
     margin-bottom: 40px;
     display: flex;
@@ -192,8 +192,6 @@
   .legacy-form-row input[type='radio'] {
     float: left;
   }
-
- /*T-shirt size*/
 
   .form-row select [type='dropdown'] {
     width: 100%;
