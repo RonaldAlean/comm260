@@ -29,23 +29,11 @@
             <h1 style="float:inline-start; text-align: center;">Welcome to spicy-pie Burgers</h1>
         </div>
         <video autoplay style="margin: 0 0; border: 0 0; padding: 0 0;
-            position: static;" id="videoElementId">
+            position: static;">
             <source src="img/Cover_Video_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    <script>
-        window.addEventListener('load', function () {
-            var newVideo = document.getElementById('videoElementId');
-            newVideo.addEventListener('ended', function () {
-                this.currentTime = 0;
-                this.play();
-            }, false);
-
-            newVideo.play();
-
-        });
-    </script>
 
     <div class="row">
 
