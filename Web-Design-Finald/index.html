@@ -15,7 +15,7 @@
         <div class="col"></div>
         <div class="col"></div>
         <div class="col">
-        <img class="float" src="img/spicy-pie-pizza.png" style="
+            <img class="float" src="img/spicy-pie-pizza.png" style="
         width: 200px;
         height: 200px;
         
@@ -28,16 +28,27 @@
         <div class="text-block">
             <h1 style="float:inline-start; text-align: center;">Welcome to spicy-pie Burgers</h1>
         </div>
-        <video autoplay style="margin: 0 0; border: 0 0;
-            padding: 0 0;
-            position: static;">
+        <video autoplay style="margin: 0 0; border: 0 0; padding: 0 0;
+            position: static;" id="videoElementId">
             <source src="img/Cover_Video_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    
+    <script>
+        window.addEventListener('load', function () {
+            var newVideo = document.getElementById('videoElementId');
+            newVideo.addEventListener('ended', function () {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+
+            newVideo.play();
+
+        });
+    </script>
+
     <div class="row">
-    
+
         <div class="col-lg-12">
             <div class="scrollmenu">
                 <a href="index.html">Burgers adress and location</a>
@@ -46,15 +57,15 @@
                 <a href="Work.html">Work</a>
             </div>
         </div>
-    
+
     </div>
-    
+
     <style>
         body {
             font-family: 'Tangerine', serif;
             font-size: 50px;
         }
-    
+
         /* Bottom right text */
         .text-block {
             padding-top: 1%;
