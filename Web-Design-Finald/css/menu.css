@@ -1,10 +1,10 @@
 div.scrollmenu {
     background-color: #333;
     overflow: auto;
-    float:none;
+    float: none;
     overflow: hidden;
     white-space: nowrap;
-    width: 102%;
+    width: 100%;
     position: relative;
     display: flex;
   }
@@ -16,7 +16,7 @@ div.scrollmenu {
 
   div.scrollmenu a {
     display: inline-block;
-    flex-direction:column;
+    flex-direction: column;
     color: white;
     text-align: center;
     padding: 14px;
